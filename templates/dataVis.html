@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha256-/ykJw/wDxMa0AQhHDYfuMEwVb4JHMx9h4jD4XvHqVzU=" crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="{{ url_for('index') }}" class="navbar-brand">Clash of Clans WarLog Tracker</a>
+        </div>
+
+        <div class="body-content">
+            <br>
+            <span class="message">{{ clan_name }} vs  {{ opponent_name }}</span><br>
+            <span class="message">  War Status: {{ status }}</span><br>
+            <span class="message">  Next Phase Commences: {{ time }}</span><br>
+            <br>
+            <a href="{{ url_for('index') }}" class = 'btn btn-primary'>Demographics</a>
+            <br>
+            <a href="{{ url_for('index') }}" class = 'btn btn-secondary'>Back</a>
+            <br>
+            <hr/>
+            <footer>
+                <p>© Carlton Duke 2022 https://github.com/carltonduke/clashofclans</p>
+            </footer>
+        </div>
+    </body>
+</html>

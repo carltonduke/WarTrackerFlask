@@ -1,0 +1,71 @@
+.message {
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.foota {
+    font-weight:400;
+    color: rgb(0, 0, 0);
+}
+
+.wmessage {
+    font-weight: 650;
+    color: rgb(255, 255, 255);
+}
+
+.bigblackmessage {
+    font-weight:1000;
+    color: rgb(0, 0, 0);
+}
+
+.bigbluemessage {
+    font-weight:1000;
+    color: rgb(89, 0, 255);
+}
+
+.bigredmessage {
+    font-weight:1000;
+    color: rgb(255, 0, 0);
+}
+
+.myDiv {
+    border: 2px outset lightslategray;
+    background-color: rgb(178, 243, 207);
+    text-align: center;
+  }
+
+.navbar {
+    background-color: lightslategray;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(150, 131, 238);
+    padding: 8px 5px 8px 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navbar-item {
+    font-variant: small-caps;
+    margin-left: 30px;
+}
+
+.body-content {
+    padding: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.links {
+    font-size: 0.8em;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(150, 131, 238);
+    margin-left: 10px;
+}
