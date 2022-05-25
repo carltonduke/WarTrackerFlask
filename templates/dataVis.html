@@ -18,10 +18,11 @@
             <span class="message">  War Status: {{ status }}</span><br>
             <span class="message">  Next Phase Commences: {{ time }}</span><br>
             <br>
-            <a href="{{ url_for('index') }}" class = 'btn btn-primary'>Demographics</a>
-            <br>
             <a href="{{ url_for('index') }}" class = 'btn btn-secondary'>Back</a>
             <br>
+            <div class="myDiv">
+                <img alt = "Graphs man" src="{{ graph }}" width="500" height="400">
+            </div><br>
             <hr/>
             <footer>
                 <p>© Carlton Duke 2022 https://github.com/carltonduke/clashofclans</p>
