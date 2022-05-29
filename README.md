@@ -18,4 +18,4 @@ File: app.py
 File: views.py
   This holds all the backend processing code that receives requests from app.py, calls the COC api, formats that data, and returns the proper html file with the    
   inserted data.
-  Data is inserted into an html file also using Jinga, formatted like {{ var }}
+  Data is inserted into an html file also using Jinga, formatted like {{ var }}.
