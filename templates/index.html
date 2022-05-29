@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}Clash of Clans Warlogger{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+  <h1>Home</h1>
+  <a href="{{ url_for('warlogInput') }}" class = 'btn btn-info'>Warlog</a><br>
+  <a href="{{ url_for('clan') }}" class = 'btn btn-warning'>Clans</a>
+  <p class="important">
+    Work in progress. Keep it moving <p><br>
+{% endblock %}

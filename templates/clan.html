@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}Clans{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+  <h1>Clans</h1>
+  <p class="important">
+    Work in progress. Keep it moving <p>
+    <a href="{{ url_for('index') }}" class = 'btn btn-light'>Back</a>
+{% endblock %}

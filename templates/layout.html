@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+        {% block head %}
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha256-/ykJw/wDxMa0AQhHDYfuMEwVb4JHMx9h4jD4XvHqVzU=" crossorigin="anonymous" />
+        {% endblock %}
     </head>
-
     <body>
         <div class="navbar">
-            <a href="{{ url_for('index') }}" class="navbar-brand">Clash of Clans WarLog Tracker</a>
+            <a href="{{ url_for('index') }}" class="navbar-brand">Clash of Clans WarLogger</a>
         </div>
-
-        <div class="body-content">
-            <br>
-            <a href="{{ url_for('warstatus') }}" class = 'btn btn-primary'>Warlog</a>
-            <br>
-            <br>
-            <a href="{{ url_for('clan') }}" class = 'btn btn-primary'>Clan</a>
-            <br>
-            <hr/>
-            <footer>
-                <span class="body-content"> © Carlton Duke 2022 </span> 
-                <a href="https://github.com/carltonduke/clashofclans" class="body-content">My Github</a>
-            </footer>
-        </div>
+        <div class="body-content"> {% block content %}{% endblock %}</div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <div id="footer">
+            {% block footer %}
+            &copy; Copyright 2022 by <a href="https://github.com/carltonduke/clashofclans">Carlton Duke</a>.
+            {% endblock %}
+          </div>
     </body>
 </html>

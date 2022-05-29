@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block title %}Warlog{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+  <h2>Warlog</h2>
+    <div class="container">
+        <h5>Input Clan Tag</h5>
+        <div class="row">
+            <div class="col-sm">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">#</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Clan Tag" aria-label="Clan Tag" aria-describedby="basic-addon1">
+            </div>
+            <div class="col-sm">
+            <form action="/warlog/" method = "POST">
+              <input type = "text" name = "clan_tag" class="form-control" placeholder="Clan Tag" aria-label="clan_tag" aria-describedby="basic-addon1"/>
+              <p><input type = "submit" value = "Submit" /></p>
+            </form>
+            </div>
+        </div>
+      </div>
+    </div><br>
+    <div class="container">
+      <h5>Clan Lookup</h5>
+        <div class="row">
+          {% if clan_found %}
+          <div class="col-sm">
+            <img src="{{ clan_im }}">
+            <span class="h4">{{ clan_name }}</span><br>
+          </div>
+          <div class="col-sm">
+            <span class="bigblackmessage">  {{ description }} </span><br><br>
+            <span class="message">  Clan Level: </span>
+            <span class="bigblackmessage">  {{ clan_level }} </span>
+            <span class="message">  Members: </span>
+            <span class="bigblackmessage">  {{ mem_count }} </span>
+          </div>
+          </div>
+          {% endif %}
+          {% if error %}
+            <span class="h4">{{ error }}</span><br>
+          {% endif %}
+        </div>
+    </div>
+{% endblock %} 
+    
