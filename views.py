@@ -20,8 +20,6 @@ def warlogInput():
         )
         else:
             return render_template("warlogInput.html", error = "Not Found")
-        
-    
 def warlogSearchClan():
     return render_template("warlog.html")
 def clan():

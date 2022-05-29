@@ -1,8 +1,0 @@
-Python Links:
-- https://flask.palletsprojects.com/en/1.1.x/patterns/lazyloading/#converting-to-centralized-url-map (Flask Lazy Loading)
-
-- https://flask.palletsprojects.com/en/2.1.x/patterns/templateinheritance/ (Template Inheritance)
-
-- https://getbootstrap.com/docs/4.4/content/reboot/ (Bootstrap elements)
-
-- https://getbootstrap.com/docs/4.0/components/progress/ (bootstrap progress bar)
