@@ -19,10 +19,16 @@
                     <input type="text" class="form-control" placeholder="Clan Tag" aria-label="Clan Tag" aria-describedby="basic-addon1">
             </div>
             <div class="col-sm">
-            <form action="/warlog/" method = "POST">
-              <input type = "text" name = "clan_tag" class="form-control" placeholder="Clan Tag" aria-label="clan_tag" aria-describedby="basic-addon1"/>
-              <p><input type = "submit" value = "Submit" /></p>
-            </form>
+              <form action="/warlog/" method = "POST", class = input-group-prepend>
+                <div class="input-group mb-3">
+                    <form action="/warlog/" method = "POST", class = input-group-prepend>
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">#</span>
+                      </div>
+                      <input type = "text" name = "clan_tag" class="form-control" placeholder="Clan Tag" aria-label="clan_tag" aria-describedby="basic-addon1"/>
+                      <p>  <input type = "submit" value = "Enter" /></p>
+                  </div>
+              </form>  
             </div>
         </div>
       </div>
